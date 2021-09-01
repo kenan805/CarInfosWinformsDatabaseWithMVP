@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.Properties.Resources.resources
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.csproj.GenerateResource.cache
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\CarWinformsMVP.exe.config
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\CarWinformsMVP.exe
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\CarWinformsMVP.pdb
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\Guna.UI2.dll
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.csproj.CopyComplete
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.exe
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.pdb
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\CarWinformsMVP\CarWinformsMVP\obj\Debug\CarWinformsMVP.Views.MainView.resources
