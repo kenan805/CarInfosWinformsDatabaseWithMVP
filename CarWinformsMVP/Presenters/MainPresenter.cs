@@ -62,7 +62,6 @@ namespace CarWinformsMVP.Presenters
         }
         private void ViewComboBoxSelectedIndexChanged(object sender,EventArgs e)
         {
-            _view.cb
             List<string> models = new List<string>();
             switch (_view.VendorText)
             {
