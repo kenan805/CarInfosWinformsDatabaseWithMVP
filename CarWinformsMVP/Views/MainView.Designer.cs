@@ -76,6 +76,7 @@ namespace CarWinformsMVP.Views
             this.cbVendor.Name = "cbVendor";
             this.cbVendor.ShadowDecoration.Parent = this.cbVendor;
             this.cbVendor.Size = new System.Drawing.Size(253, 36);
+            this.cbVendor.StartIndex = 0;
             this.cbVendor.TabIndex = 5;
             this.cbVendor.SelectedIndexChanged += new System.EventHandler(this.CbVendor_SelectedIndexChanged);
             // 
@@ -92,11 +93,18 @@ namespace CarWinformsMVP.Views
             this.cbModel.HoverState.Parent = this.cbModel;
             this.cbModel.IntegralHeight = false;
             this.cbModel.ItemHeight = 30;
+            this.cbModel.Items.AddRange(new object[] {
+            "100",
+            "80",
+            "A1",
+            "A3",
+            "A4"});
             this.cbModel.ItemsAppearance.Parent = this.cbModel;
             this.cbModel.Location = new System.Drawing.Point(327, 151);
             this.cbModel.Name = "cbModel";
             this.cbModel.ShadowDecoration.Parent = this.cbModel;
             this.cbModel.Size = new System.Drawing.Size(253, 36);
+            this.cbModel.StartIndex = 0;
             this.cbModel.TabIndex = 6;
             // 
             // cbColor
@@ -162,6 +170,7 @@ namespace CarWinformsMVP.Views
             this.cbTransmission.Name = "cbTransmission";
             this.cbTransmission.ShadowDecoration.Parent = this.cbTransmission;
             this.cbTransmission.Size = new System.Drawing.Size(253, 36);
+            this.cbTransmission.StartIndex = 0;
             this.cbTransmission.TabIndex = 9;
             // 
             // listBoxCar
@@ -169,9 +178,9 @@ namespace CarWinformsMVP.Views
             this.listBoxCar.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCar.FormattingEnabled = true;
             this.listBoxCar.ItemHeight = 23;
-            this.listBoxCar.Location = new System.Drawing.Point(643, 69);
+            this.listBoxCar.Location = new System.Drawing.Point(623, 69);
             this.listBoxCar.Name = "listBoxCar";
-            this.listBoxCar.Size = new System.Drawing.Size(361, 280);
+            this.listBoxCar.Size = new System.Drawing.Size(426, 280);
             this.listBoxCar.TabIndex = 10;
             // 
             // panel1
@@ -217,7 +226,7 @@ namespace CarWinformsMVP.Views
             this.btnLoad.Font = new System.Drawing.Font("Perpetua Titling MT", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
             this.btnLoad.HoverState.Parent = this.btnLoad;
-            this.btnLoad.Location = new System.Drawing.Point(819, 355);
+            this.btnLoad.Location = new System.Drawing.Point(864, 351);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.ShadowDecoration.Parent = this.btnLoad;
             this.btnLoad.Size = new System.Drawing.Size(185, 123);
@@ -240,10 +249,10 @@ namespace CarWinformsMVP.Views
             this.btnDelete.Font = new System.Drawing.Font("Perpetua Titling MT", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
             this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Location = new System.Drawing.Point(643, 425);
+            this.btnDelete.Location = new System.Drawing.Point(623, 425);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(153, 53);
+            this.btnDelete.Size = new System.Drawing.Size(220, 53);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
@@ -263,10 +272,10 @@ namespace CarWinformsMVP.Views
             this.btnAdd.Font = new System.Drawing.Font("Perpetua Titling MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.HoverState.Parent = this.btnAdd;
-            this.btnAdd.Location = new System.Drawing.Point(643, 355);
+            this.btnAdd.Location = new System.Drawing.Point(623, 355);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
-            this.btnAdd.Size = new System.Drawing.Size(153, 53);
+            this.btnAdd.Size = new System.Drawing.Size(220, 53);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);

@@ -1,9 +1,11 @@
 ﻿using CarWinformsMVP.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CarWinformsMVP.Views
 {
@@ -22,8 +24,10 @@ namespace CarWinformsMVP.Views
         Car SelectDeleteCar { get; set; }
         List<string> Colors { set; }
         List<int> Years { set; }
-        List<string> Transmissions { set; } 
-        List<string> Models { set; } 
+        List<string> Transmissions { set; }
+        List<string> Models { set; }
+        Guna.UI2.WinForms.Guna2ComboBox ComboBoxColor { get; set; }
+
 
     }
 }

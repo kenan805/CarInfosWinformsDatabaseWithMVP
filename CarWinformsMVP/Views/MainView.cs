@@ -23,6 +23,7 @@ namespace CarWinformsMVP.Views
         public EventHandler<EventArgs> DeleteButtonClickedHandler { get; set; }
         public EventHandler<EventArgs> LoadButtonClickedHandler { get; set; }
         public EventHandler<EventArgs> ComboBoxVendorSelectedIndexChangedHandler { get; set; }
+        public EventHandler<DrawItemEventArgs> ComboBoxColorDrawItemHandler { get; set; }
         public string VendorText { get => cbVendor.Text; set => cbVendor.Text = value; }
         public string ModelText { get => cbModel.Text; set => cbModel.Text = value; }
         public string ColorText { get => cbColor.Text; set => cbColor.Text = value; }
@@ -34,6 +35,7 @@ namespace CarWinformsMVP.Views
         public List<int> Years { set => cbYear.DataSource = value; }
         public List<string> Transmissions { set => cbTransmission.DataSource = value; }
         public List<string> Models { set => cbModel.DataSource = value; }
+        public Guna2ComboBox ComboBoxColor { get => cbColor; set => cbColor = value; }
 
         private void BtnAdd_Click(object sender, EventArgs e) => AddButtonClickedHandler.Invoke(sender, e);
 
@@ -42,5 +44,6 @@ namespace CarWinformsMVP.Views
         private void BtnLoad_Click(object sender, EventArgs e) => LoadButtonClickedHandler.Invoke(sender, e);
 
         private void CbVendor_SelectedIndexChanged(object sender, EventArgs e) => ComboBoxVendorSelectedIndexChangedHandler.Invoke(sender, e);
+
     }
 }

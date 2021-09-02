@@ -2,11 +2,14 @@
 using CarWinformsMVP.Models;
 using CarWinformsMVP.Views;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CarWinformsMVP.Presenters
 {
@@ -18,24 +21,25 @@ namespace CarWinformsMVP.Presenters
         {
             _view = view;
             _carContext = new CarContext();
+
+            _view.AddButtonClickedHandler += ViewAddButtonClicked;
+            _view.DeleteButtonClickedHandler += ViewDeleteButtonClicked;
+            _view.LoadButtonClickedHandler += ViewLoadButtonClicked;
+            _view.ComboBoxVendorSelectedIndexChangedHandler += ViewComboBoxVendorSelectedIndexChanged;
+
             //Colors
-            List<string> colors = new List<string>();
             foreach (System.Reflection.PropertyInfo prop in typeof(Color).GetProperties())
             {
                 if (prop.PropertyType.FullName == "System.Drawing.Color")
-                    colors.Add(prop.Name);
+                    _view.ComboBoxColor.Items.Add(prop.Name);
             }
-            _view.Colors = colors;
+            _view.ComboBoxColor.StartIndex = 0;
+
             //Years
             List<int> years = new List<int>();
             for (int year = DateTime.Now.Year; year >= 1900; year--)
                 years.Add(year);
             _view.Years = years;
-
-            _view.AddButtonClickedHandler += ViewAddButtonClicked;
-            _view.DeleteButtonClickedHandler += ViewDeleteButtonClicked;
-            _view.LoadButtonClickedHandler += ViewLoadButtonClicked;
-            _view.ComboBoxVendorSelectedIndexChangedHandler += ViewComboBoxSelectedIndexChanged;
         }
 
         private void ViewAddButtonClicked(object sender, EventArgs e)
@@ -60,9 +64,8 @@ namespace CarWinformsMVP.Presenters
         {
             _view.Cars = _carContext.Cars.ToList();
         }
-        private void ViewComboBoxSelectedIndexChanged(object sender,EventArgs e)
+        private void ViewComboBoxVendorSelectedIndexChanged(object sender, EventArgs e)
         {
-            _view.cb
             List<string> models = new List<string>();
             switch (_view.VendorText)
             {
